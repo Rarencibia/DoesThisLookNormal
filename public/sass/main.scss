@@ -1,5 +1,7 @@
+@import './miniShopHP';
 @import './nav';
 @import './logo';
+
 
 html body {
     margin: 0;
@@ -36,7 +38,7 @@ main {
     main {
         margin: auto;
         height: 80vh;
-        width: 80%;
+        width: 95%;
         .mainSection {
             width: 100%;
             height: auto;
