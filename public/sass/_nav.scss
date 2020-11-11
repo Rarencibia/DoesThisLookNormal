@@ -1,0 +1,38 @@
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 5px 5px lightgray;
+    // width: 100%;
+    // height: 40vh;
+    background-image: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    z-index: -4;
+
+    ul {
+        width: 80%;
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 30px;
+    }
+    li{
+        border: 3px solid black;
+        font-family: 'Modak', cursive;
+        font-size: 45px;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        list-style: none;
+    }
+
+}
+
+
+

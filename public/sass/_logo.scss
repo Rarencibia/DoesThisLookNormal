@@ -1,0 +1,35 @@
+nav {   
+    .logo {
+        position: relative;
+        background: transparent;
+        font-family: 'Fredericka the Great', cursive;
+        width: 30%;
+        font-size: 45px;
+        z-index: -1;
+        color: white;
+        text-shadow: 1px 3px 10px black;
+        letter-spacing: 5px;
+    }
+    .logo::after {
+        position: absolute;
+        content: "Doesthislooknormal";
+        color: black;
+        font-size: 45.3px;
+        left: -5px;
+        top: 2px;
+        z-index: -2;
+
+
+    }
+    .logo::before {
+        position: absolute;
+        content: "Doesthislooknormal";
+        color: red;
+        font-size: 45.5px;
+        z-index: -3;
+        left: 3px;
+        letter-spacing: 4.9px;
+
+
+    }
+}
