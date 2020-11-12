@@ -30,6 +30,9 @@
         a{
             text-decoration: underline;
             color: blue;
+            &:hover{
+                opacity: .60;
+            }
         }
     }
 
@@ -68,12 +71,14 @@
         overflow: hidden!important;
 
         .creationInfo{
-            border: 3px dotted black;
             width: 100%!important;
             word-wrap: break-word;
         }
         p{
             padding: 15px;
+        }
+        .createInput{
+            width: 80%;
         }
     }
 }
