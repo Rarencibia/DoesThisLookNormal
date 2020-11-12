@@ -1,7 +1,7 @@
 /* line 1, public/sass/createForm.scss */
 .createWrapper {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #ffb200;
   background: radial-gradient(circle, #ffb200 71%, red 78%, #f5ff0a 100%); }
   /* line 6, public/sass/createForm.scss */
@@ -12,25 +12,30 @@
     margin: auto; }
   /* line 13, public/sass/createForm.scss */
   .createWrapper h1 {
+    width: 100%;
+    margin-top: 0;
+    background-color: darkgray;
+    color: black;
     font-size: 30px;
     text-align: center;
     font-family: "Ewert", cursive; }
-  /* line 19, public/sass/createForm.scss */
+  /* line 23, public/sass/createForm.scss */
   .createWrapper p {
     font-size: 25px;
-    font-family: "Yatra One", cursive; }
-  /* line 25, public/sass/createForm.scss */
+    font-family: "Yatra One", cursive;
+    padding: 15px; }
+  /* line 30, public/sass/createForm.scss */
   .createWrapper .emailAddress a {
     text-decoration: underline;
     color: blue; }
-  /* line 31, public/sass/createForm.scss */
+  /* line 36, public/sass/createForm.scss */
   .createWrapper .formWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 30px; }
-  /* line 38, public/sass/createForm.scss */
+  /* line 43, public/sass/createForm.scss */
   .createWrapper .createInput {
     width: 50%;
     height: 100px;
@@ -41,12 +46,25 @@
     background-color: transparent;
     font-size: 25px;
     border-bottom: 1px solid black; }
-    /* line 48, public/sass/createForm.scss */
+    /* line 53, public/sass/createForm.scss */
     .createWrapper .createInput:focus {
       outline: none;
       background-color: black;
       color: white;
       transform: skew(-6deg); }
+
+@media screen and (max-width: 981px) {
+  /* line 67, public/sass/createForm.scss */
+  .createWrapper {
+    overflow: hidden !important; }
+    /* line 70, public/sass/createForm.scss */
+    .createWrapper .creationInfo {
+      border: 3px dotted black;
+      width: 100% !important;
+      word-wrap: break-word; }
+    /* line 75, public/sass/createForm.scss */
+    .createWrapper p {
+      padding: 15px; } }
 
 /* line 1, public/sass/_miniShopHP.scss */
 .miniShopSection {
