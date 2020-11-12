@@ -30,22 +30,48 @@
     overflow: hidden; }
   /* line 32, public/sass/_miniShopHP.scss */
   .miniShopSection .miniProductInfo {
+    font-size: 25px;
     position: absolute;
-    left: 70px;
-    background: black;
-    color: white; }
-    /* line 37, public/sass/_miniShopHP.scss */
+    left: 105px;
+    top: -22px;
+    background: darkgray;
+    color: white;
+    border-radius: 4px; }
+    /* line 40, public/sass/_miniShopHP.scss */
     .miniShopSection .miniProductInfo:hover {
       cursor: pointer;
-      background: darkgray; }
+      text-decoration: underline; }
 
-/* line 45, public/sass/_miniShopHP.scss */
+/* line 50, public/sass/_miniShopHP.scss */
 .introContainer {
   width: 40%;
   margin: auto; }
-  /* line 49, public/sass/_miniShopHP.scss */
+  /* line 54, public/sass/_miniShopHP.scss */
   .introContainer .intro {
     text-align: center; }
+  /* line 58, public/sass/_miniShopHP.scss */
+  .introContainer h1 {
+    font-family: "Ewert", cursive;
+    font-size: 45px;
+    letter-spacing: 5px;
+    word-spacing: 10px; }
+  /* line 64, public/sass/_miniShopHP.scss */
+  .introContainer .introP {
+    font-family: "Yatra One", cursive;
+    font-size: 30px;
+    word-spacing: 4px;
+    letter-spacing: -2px; }
+
+@media screen and (max-width: 1000px) {
+  /* line 75, public/sass/_miniShopHP.scss */
+  .introContainer {
+    width: 100%; }
+    /* line 80, public/sass/_miniShopHP.scss */
+    .introContainer .introMedia {
+      padding: 20px;
+      text-align: left;
+      width: 95%;
+      margin: auto !important; } }
 
 /* line 1, public/sass/_nav.scss */
 nav {
@@ -57,8 +83,9 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: left;
-  z-index: -4; }
-  /* line 14, public/sass/_nav.scss */
+  z-index: -4;
+  overflow: none; }
+  /* line 15, public/sass/_nav.scss */
   nav ul {
     width: 80%;
     height: 70px;
@@ -66,7 +93,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 30px; }
-  /* line 22, public/sass/_nav.scss */
+  /* line 23, public/sass/_nav.scss */
   nav li {
     font-family: 'Modak', cursive;
     font-size: 45px;
@@ -75,11 +102,34 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none; }
-    /* line 31, public/sass/_nav.scss */
+    list-style: none;
+    white-space: nowrap; }
+    /* line 34, public/sass/_nav.scss */
     nav li:hover {
       cursor: pointer;
       text-decoration: underline; }
+
+@media screen and (max-width: 1379px) and (min-width: 1271px) {
+  /* line 48, public/sass/_nav.scss */
+  nav ul {
+    width: 100%; }
+  /* line 51, public/sass/_nav.scss */
+  nav li {
+    width: 100%; } }
+
+@media screen and (max-width: 1270px) {
+  /* line 58, public/sass/_nav.scss */
+  ul {
+    justify-content: left !important;
+    align-items: center !important;
+    margin: auto;
+    padding: 20px;
+    width: 100% !important;
+    border: 3px solid black; }
+  /* line 67, public/sass/_nav.scss */
+  li {
+    width: 100% !important;
+    margin: 10px; } }
 
 /* line 1, public/sass/_logo.scss */
 nav {
@@ -114,46 +164,56 @@ nav {
     left: 3px;
     letter-spacing: 4.9px; }
 
-/* line 6, public/sass/main.scss */
+@media screen and (max-width: 1270px) {
+  /* line 39, public/sass/_logo.scss */
+  .logo {
+    display: none; }
+  /* line 42, public/sass/_logo.scss */
+  .logo::after {
+    display: none; }
+  /* line 45, public/sass/_logo.scss */
+  .logo::before {
+    display: none; } }
+
+/* line 12, public/sass/main.scss */
 html body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
-  /* line 10, public/sass/main.scss */
+  /* line 16, public/sass/main.scss */
   html body a {
     text-decoration: none;
     color: black; }
-    /* line 13, public/sass/main.scss */
+    /* line 19, public/sass/main.scss */
     html body a:hover {
       cursor: pointer !important; }
 
-/* line 20, public/sass/main.scss */
+/* line 26, public/sass/main.scss */
 main {
-  margin: auto;
   height: 80vh;
   width: 100%; }
-  /* line 24, public/sass/main.scss */
+  /* line 30, public/sass/main.scss */
   main .mainSection {
     width: 100%;
     height: auto; }
-    /* line 27, public/sass/main.scss */
+    /* line 33, public/sass/main.scss */
     main .mainSection .logoIMG {
       position: relative;
       width: 100%;
       height: auto;
       z-index: -5; }
 
-@media only screen and (min-width: 600px) {
-  /* line 38, public/sass/main.scss */
+@media screen and (min-width: 600px) {
+  /* line 44, public/sass/main.scss */
   main {
-    margin: auto;
     height: 80vh;
-    width: 95%; }
-    /* line 42, public/sass/main.scss */
+    width: 95%;
+    margin: auto !important; }
+    /* line 49, public/sass/main.scss */
     main .mainSection {
       width: 100%;
       height: auto; }
-      /* line 45, public/sass/main.scss */
+      /* line 53, public/sass/main.scss */
       main .mainSection .logoIMG {
         width: 100%;
         height: auto; } }

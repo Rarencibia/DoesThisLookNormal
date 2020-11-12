@@ -33,3 +33,16 @@ nav {
 
     }
 }
+
+
+@media screen and (max-width: 1270px){
+    .logo {
+        display: none;
+    }
+    .logo::after {
+        display: none;
+    }
+    .logo::before {
+        display: none;  
+    }
+}

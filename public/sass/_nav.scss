@@ -10,6 +10,7 @@ nav {
     background-size: cover;
     background-position-x: left;
     z-index: -4;
+    overflow: none;
 
     ul {
         width: 80%;
@@ -28,6 +29,8 @@ nav {
         justify-content: center; 
         align-items: center;
         list-style: none;
+        white-space: nowrap;
+
         &:hover {
             cursor: pointer;
             text-decoration: underline;
@@ -39,3 +42,30 @@ nav {
 
 
 
+
+@media screen and (max-width: 1379px) and (min-width: 1271px){
+    nav{
+        ul{
+            width: 100%;
+        }
+        li {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1270px){
+    ul {
+        justify-content: left!important;
+        align-items: center!important;
+        margin: auto;
+        padding: 20px;
+        width: 100%!important;
+        border: 3px solid black;
+    }
+
+    li {
+        width: 100%!important;
+        margin: 10px;
+    }
+}

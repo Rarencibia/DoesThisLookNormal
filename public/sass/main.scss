@@ -1,3 +1,9 @@
+$header-font: 'Modak', cursive;
+$paragraph-font: 'Yatra One', cursive;
+$mini-header-font: 'Ewert', cursive;
+
+
+
 @import './miniShopHP';
 @import './nav';
 @import './logo';
@@ -18,7 +24,7 @@ html body {
 
 
 main {
-    margin: auto;
+
     height: 80vh;
     width: 100%;
     .mainSection {
@@ -34,14 +40,16 @@ main {
 }
 
 
-@media only screen and (min-width: 600px){
+@media screen and (min-width: 600px){
     main {
-        margin: auto;
         height: 80vh;
         width: 95%;
+        margin: auto!important;
+
         .mainSection {
             width: 100%;
             height: auto;
+            
             .logoIMG{
                 width: 100%;
                 height: auto;

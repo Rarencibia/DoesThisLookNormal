@@ -30,15 +30,20 @@
         overflow: hidden;
     }
     .miniProductInfo {
+        font-size: 25px;
         position: absolute;
-        left: 70px;
-        background: black;
+        left: 105px;
+        top: -22px;
+        background: darkgray;
         color: white;
+        border-radius: 4px;
         &:hover {
             cursor: pointer;
-            background: darkgray;
+            text-decoration: underline;
         }
     }
+    
+
 }
 
     
@@ -49,4 +54,36 @@
     .intro {
         text-align: center;
     }
+
+    h1 {
+        font-family: $mini-header-font;
+        font-size: 45px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+    }
+    .introP{
+        font-family: $paragraph-font;
+        font-size: 30px;
+        word-spacing: 4px;
+        letter-spacing: -2px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px){
+    .introContainer{
+
+        width: 100%;
+
+
+        .introMedia{
+            padding: 20px;
+            text-align: left;
+            width: 95%;
+            margin: auto!important;
+        }
+    }
+
+
 }
