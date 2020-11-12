@@ -3,7 +3,7 @@ $paragraph-font: 'Yatra One', cursive;
 $mini-header-font: 'Ewert', cursive;
 
 
-
+@import './createForm.scss';
 @import './miniShopHP';
 @import './nav';
 @import './logo';
@@ -25,16 +25,20 @@ html body {
 
 main {
 
-    height: 80vh;
+    height: auto!important;
     width: 100%;
     .mainSection {
         width: 100%;
         height: auto;
+
         .logoIMG{
+            border: 3px solid black;
             position: relative;
             width: 100%;
             height: auto;
             z-index: -5;
+            object-fit: contain;
+
         }
     }
 }

@@ -1,0 +1,60 @@
+.createWrapper {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255,178,0);
+    background: radial-gradient(circle, rgba(255,178,0,1) 71%, rgba(255,0,0,1) 78%, rgba(245,255,10,1) 100%);
+    .creationInfo{
+        margin-top: 30px!important;
+        border: 3px solid black;
+        width: 50%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        font-family: $mini-header-font;
+    }
+
+    p{
+        font-size: 25px ;
+        font-family: $paragraph-font;
+    }
+
+    .emailAddress {
+        a{
+            text-decoration: underline;
+            color: blue;
+        }
+    }
+
+    .formWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .createInput {
+        width: 50%;
+        height: 100px;
+        margin: auto;
+        margin-top: 30px;
+        opacity: .50;
+        border: none;
+        background-color: transparent;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+        &:focus{
+            outline: none;
+            background-color: black;
+            color: white;
+            transform: skew(-6deg);
+        
+        }
+        
+    }
+
+    }
+
+

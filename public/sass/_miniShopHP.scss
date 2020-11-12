@@ -28,6 +28,9 @@
         image-rendering: pixelated;
         object-fit: cover;
         overflow: hidden;
+        &:hover {
+            opacity: .80;
+        }
     }
     .miniProductInfo {
         font-size: 25px;

@@ -4,20 +4,18 @@
     </section>
 
     <section class="miniShopSection">
-
-      <article class="introContainer">
+      <article class="introContainer" data-aos="fade-left">
         <div class="introMedia">
           <div class="intro">
             <h1>Our Mission</h1>
           </div>
-  
           <div class="introP">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae quo, cumque temporibus nulla commodi sed aliquam numquam! Voluptas incidunt repellat voluptatem voluptate eligendi eveniet dolore nemo nihil temporibus! Fugit.</p>
           </div>
         </div>
       </article>
 
-      <div class="miniShopGrid">
+      <div class="miniShopGrid" data-aos="fade-right">
         <div class="homeDecor shopImgContainer">
           <a href="#"><img class="miniShopImg" src="images/miniShop/homeDecor.jpg" alt=""></a>
           <p class="miniProductInfo">Home Decor</p>
@@ -59,6 +57,28 @@
         </div>
       </div>
     </section>
+
+
+    <section class="createWrapper">
+      <article class="creationInfo">
+        <h1>Create Your Own Normal</h1>
+        <p>Fill out the form below to create your own style and show your abnormal side, sunshine.
+           We will recreate to your specifications, but only with materials you see in our shop! Any special requests email <span class="emailAddress"><a href="mailto:"doesthislooknormal@gmail.com">doesthislooknormal@gmail.com</a></span>.
+        </p>
+      </article>
+
+      <form class="formWrapper" action="#">
+        <input class="createInput" type="text" placeholder="Your Name" required>
+        
+        <input class="createInput" type="email" placeholder="Your Email Address" required>
+
+        <input class="createInput" type="text" placeholder="Type of Material" required>
+
+        <textarea class="createInput" name="textBox" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
+
+        <button>Submit</button>
+      </form>
+    </section>
 </main>
 
 
@@ -69,6 +89,7 @@
   delay: 50, // values from 0 to 3000, with step 50ms
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: 'ease-in', // default easing for AOS animations
+  once: true,
   }
   );
 </script>
