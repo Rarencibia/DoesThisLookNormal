@@ -2,7 +2,7 @@ $header-font: 'Modak', cursive;
 $paragraph-font: 'Yatra One', cursive;
 $mini-header-font: 'Ewert', cursive;
 
-
+@import './footer';
 @import './createForm.scss';
 @import './miniShopHP';
 @import './nav';
@@ -13,6 +13,7 @@ html body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: black;
     a {
         text-decoration: none;
         color: black;
