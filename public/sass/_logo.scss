@@ -14,7 +14,7 @@ nav {
     .logo::after {
         position: absolute;
         content: "Doesthislooknormal";
-        color: black;
+        color: rgb(189, 97, 48);
         font-size: 45.3px;
         left: -5px;
         top: 2px;
@@ -23,9 +23,10 @@ nav {
 
     }
     .logo::before {
+        font-weight: 900;
         position: absolute;
         content: "Doesthislooknormal";
-        color: red;
+        color: black;
         font-size: 45.5px;
         z-index: -1;
         left: 3px;

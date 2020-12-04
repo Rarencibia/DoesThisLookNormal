@@ -1,6 +1,7 @@
 $header-font: 'Modak', cursive;
 $paragraph-font: 'Yatra One', cursive;
 $mini-header-font: 'Ewert', cursive;
+$logo-font: 'Fredericka the Great', cursive;
 
 @import './footer';
 @import './createForm.scss';
@@ -10,15 +11,19 @@ $mini-header-font: 'Ewert', cursive;
 
 
 html body {
+    font-family: $paragraph-font;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: black;
     a {
+        transform: skew(-20deg);
         text-decoration: none;
-        color: black;
+        color: rgb(189, 97, 48);
         &:hover{
             cursor: pointer!important;
+            text-decoration: overline;
+            text-decoration-color: 	rgb(174, 68, 170);
         }
 }
 }

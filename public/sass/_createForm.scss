@@ -1,28 +1,25 @@
 .createWrapper {
     width: 100%;
     height: auto;
-    background: rgb(255,178,0);
-    background: radial-gradient(circle, rgba(255,178,0,1) 71%, rgba(255,0,0,1) 78%, rgba(245,255,10,1) 100%);
+    border: 3px solid black;
+    background-color: white;
     .creationInfo{
-        margin-top: 30px!important;
-        border: 3px solid black;
         width: 50%;
         margin: auto;
     }
 
     h1 {
-        width: 100%;
-        margin-top: 0;
-        background-color: darkgray;
+
         color: black;
         font-size: 30px;
         text-align: center;
-        font-family: $mini-header-font;
+        font-family: $logo-font;
     }
 
     p{
         font-size: 25px ;
-        font-family: $paragraph-font;
+        font-family: $logo-font;
+        font-weight: bold;
         padding: 15px;
     }
 

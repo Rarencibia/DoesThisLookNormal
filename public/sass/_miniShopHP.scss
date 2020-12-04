@@ -1,9 +1,10 @@
 .miniShopSection {
     width: 100%;
     height: auto;
-    background: rgb(225,206,162);
-    background: linear-gradient(50deg, rgba(225,206,162,1) 5%, rgba(221,174,81,1) 11%, rgba(225,206,162,1) 26%, rgba(203,106,93,1) 38%, rgba(225,206,162,1) 61%, rgba(75,126,104,1) 75%, rgba(225,206,162,1) 91%);
-    
+    padding-bottom: 100px;
+    color: black;
+    letter-spacing: 3px;
+
     .miniShopGrid{
         width: 100%;
         height: 100%;
@@ -35,12 +36,13 @@
     .miniProductInfo {
         font-size: 25px;
         position: absolute;
-        left: 105px;
+        left: 94px;
         top: -22px;
         background: darkgray;
         color: white;
         border-radius: 4px;
         &:hover {
+            text-shadow: 1px 2px 10px black;
             cursor: pointer;
             text-decoration: underline;
         }
@@ -59,13 +61,14 @@
     }
 
     h1 {
-        font-family: $mini-header-font;
+        font-family: $logo-font;
         font-size: 45px;
         letter-spacing: 5px;
         word-spacing: 10px;
     }
     .introP{
-        font-family: $paragraph-font;
+        font-family: $logo-font;
+        font-weight: bold;
         font-size: 30px;
         word-spacing: 4px;
         letter-spacing: -2px;

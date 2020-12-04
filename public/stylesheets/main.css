@@ -1,100 +1,93 @@
 /* line 1, public/sass/_footer.scss */
 footer {
+  font-family: "Fredericka the Great", cursive;
+  letter-spacing: 2px;
   margin: auto;
   width: 100%;
-  height: 15vh;
+  height: auto;
   background-color: black; }
-  /* line 13, public/sass/_footer.scss */
+  /* line 15, public/sass/_footer.scss */
   footer .socialMediaWrapper {
     width: 50%;
     margin: auto;
     padding: 0px;
     border: 3px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; }
-  /* line 23, public/sass/_footer.scss */
+  /* line 25, public/sass/_footer.scss */
   footer .socialMediaLogos {
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-  /* line 30, public/sass/_footer.scss */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  /* line 33, public/sass/_footer.scss */
   footer .footerLogos {
     width: 50px;
     height: auto;
     border-radius: 20%; }
-    /* line 34, public/sass/_footer.scss */
+    /* line 37, public/sass/_footer.scss */
     footer .footerLogos:hover {
       transform: scale(1.3); }
-  /* line 39, public/sass/_footer.scss */
+  /* line 42, public/sass/_footer.scss */
   footer a {
     color: white !important; }
-    /* line 41, public/sass/_footer.scss */
+    /* line 44, public/sass/_footer.scss */
     footer a:hover {
       color: blue !important;
       text-decoration: overline; }
-  /* line 49, public/sass/_footer.scss */
-  footer h1 {
+  /* line 52, public/sass/_footer.scss */
+  footer h5 {
     border-left: solid white 3px;
     border-top: solid white 3px;
     text-align: center;
     color: white !important; }
-  /* line 55, public/sass/_footer.scss */
+  /* line 58, public/sass/_footer.scss */
   footer h3 {
-    color: white;
-    border-left: solid white 3px;
-    border-bottom: solid white 3px; }
-    /* line 59, public/sass/_footer.scss */
+    color: white; }
+    /* line 60, public/sass/_footer.scss */
     footer h3:hover {
       cursor: pointer;
-      transform: scale(1.3); }
-  /* line 65, public/sass/_footer.scss */
-  footer h5 {
-    text-align: center;
-    color: white; }
+      transform: scale(1.1); }
 
 /* line 1, public/sass/_createForm.scss */
 .createWrapper {
   width: 100%;
   height: auto;
-  background: #ffb200;
-  background: radial-gradient(circle, #ffb200 71%, red 78%, #f5ff0a 100%); }
+  border: 3px solid black;
+  background-color: white; }
   /* line 6, public/sass/_createForm.scss */
   .createWrapper .creationInfo {
-    margin-top: 30px !important;
-    border: 3px solid black;
     width: 50%;
     margin: auto; }
-  /* line 13, public/sass/_createForm.scss */
+  /* line 11, public/sass/_createForm.scss */
   .createWrapper h1 {
-    width: 100%;
-    margin-top: 0;
-    background-color: darkgray;
     color: black;
     font-size: 30px;
     text-align: center;
-    font-family: "Ewert", cursive; }
-  /* line 23, public/sass/_createForm.scss */
+    font-family: "Fredericka the Great", cursive; }
+  /* line 19, public/sass/_createForm.scss */
   .createWrapper p {
     font-size: 25px;
-    font-family: "Yatra One", cursive;
+    font-family: "Fredericka the Great", cursive;
+    font-weight: bold;
     padding: 15px; }
-  /* line 30, public/sass/_createForm.scss */
+  /* line 27, public/sass/_createForm.scss */
   .createWrapper .emailAddress a {
     text-decoration: underline;
     color: blue; }
-    /* line 33, public/sass/_createForm.scss */
+    /* line 30, public/sass/_createForm.scss */
     .createWrapper .emailAddress a:hover {
       opacity: .60; }
-  /* line 39, public/sass/_createForm.scss */
+  /* line 36, public/sass/_createForm.scss */
   .createWrapper .formWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 30px; }
-  /* line 46, public/sass/_createForm.scss */
+  /* line 43, public/sass/_createForm.scss */
   .createWrapper .createInput {
     width: 50%;
     height: 100px;
@@ -105,7 +98,7 @@ footer {
     background-color: transparent;
     font-size: 25px;
     border-bottom: 1px solid black; }
-    /* line 56, public/sass/_createForm.scss */
+    /* line 53, public/sass/_createForm.scss */
     .createWrapper .createInput:focus {
       outline: none;
       background-color: black;
@@ -113,17 +106,17 @@ footer {
       transform: skew(-6deg); }
 
 @media screen and (max-width: 981px) {
-  /* line 70, public/sass/_createForm.scss */
+  /* line 67, public/sass/_createForm.scss */
   .createWrapper {
     overflow: hidden !important; }
-    /* line 73, public/sass/_createForm.scss */
+    /* line 70, public/sass/_createForm.scss */
     .createWrapper .creationInfo {
       width: 100% !important;
       word-wrap: break-word; }
-    /* line 77, public/sass/_createForm.scss */
+    /* line 74, public/sass/_createForm.scss */
     .createWrapper p {
       padding: 15px; }
-    /* line 80, public/sass/_createForm.scss */
+    /* line 77, public/sass/_createForm.scss */
     .createWrapper .createInput {
       width: 80%; } }
 
@@ -131,9 +124,10 @@ footer {
 .miniShopSection {
   width: 100%;
   height: auto;
-  background: #e1cea2;
-  background: linear-gradient(50deg, #e1cea2 5%, #ddae51 11%, #e1cea2 26%, #cb6a5d 38%, #e1cea2 61%, #4b7e68 75%, #e1cea2 91%); }
-  /* line 7, public/sass/_miniShopHP.scss */
+  padding-bottom: 100px;
+  color: black;
+  letter-spacing: 3px; }
+  /* line 8, public/sass/_miniShopHP.scss */
   .miniShopSection .miniShopGrid {
     width: 100%;
     height: 100%;
@@ -142,12 +136,12 @@ footer {
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
     grid-gap: 100px; }
-  /* line 17, public/sass/_miniShopHP.scss */
+  /* line 18, public/sass/_miniShopHP.scss */
   .miniShopSection .shopImgContainer {
     position: relative;
     width: 100%;
     height: 400px; }
-  /* line 22, public/sass/_miniShopHP.scss */
+  /* line 23, public/sass/_miniShopHP.scss */
   .miniShopSection .miniShopImg {
     position: absolute;
     border: 3px solid black;
@@ -157,48 +151,50 @@ footer {
     image-rendering: pixelated;
     object-fit: cover;
     overflow: hidden; }
-    /* line 31, public/sass/_miniShopHP.scss */
+    /* line 32, public/sass/_miniShopHP.scss */
     .miniShopSection .miniShopImg:hover {
       opacity: .80; }
-  /* line 35, public/sass/_miniShopHP.scss */
+  /* line 36, public/sass/_miniShopHP.scss */
   .miniShopSection .miniProductInfo {
     font-size: 25px;
     position: absolute;
-    left: 105px;
+    left: 94px;
     top: -22px;
     background: darkgray;
     color: white;
     border-radius: 4px; }
-    /* line 43, public/sass/_miniShopHP.scss */
+    /* line 44, public/sass/_miniShopHP.scss */
     .miniShopSection .miniProductInfo:hover {
+      text-shadow: 1px 2px 10px black;
       cursor: pointer;
       text-decoration: underline; }
 
-/* line 53, public/sass/_miniShopHP.scss */
+/* line 55, public/sass/_miniShopHP.scss */
 .introContainer {
   width: 40%;
   margin: auto; }
-  /* line 57, public/sass/_miniShopHP.scss */
+  /* line 59, public/sass/_miniShopHP.scss */
   .introContainer .intro {
     text-align: center; }
-  /* line 61, public/sass/_miniShopHP.scss */
+  /* line 63, public/sass/_miniShopHP.scss */
   .introContainer h1 {
-    font-family: "Ewert", cursive;
+    font-family: "Fredericka the Great", cursive;
     font-size: 45px;
     letter-spacing: 5px;
     word-spacing: 10px; }
-  /* line 67, public/sass/_miniShopHP.scss */
+  /* line 69, public/sass/_miniShopHP.scss */
   .introContainer .introP {
-    font-family: "Yatra One", cursive;
+    font-family: "Fredericka the Great", cursive;
+    font-weight: bold;
     font-size: 30px;
     word-spacing: 4px;
     letter-spacing: -2px; }
 
 @media screen and (max-width: 1000px) {
-  /* line 78, public/sass/_miniShopHP.scss */
+  /* line 81, public/sass/_miniShopHP.scss */
   .introContainer {
     width: 100%; }
-    /* line 83, public/sass/_miniShopHP.scss */
+    /* line 86, public/sass/_miniShopHP.scss */
     .introContainer .introMedia {
       padding: 20px;
       text-align: left;
@@ -210,14 +206,10 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  box-shadow: 4px 5px 5px lightgray;
-  background-image: url("../images/background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: left;
+  background-color: #f4e7a1;
   z-index: -4;
   overflow: none; }
-  /* line 15, public/sass/_nav.scss */
+  /* line 9, public/sass/_nav.scss */
   nav ul {
     width: 80%;
     height: 70px;
@@ -225,9 +217,9 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 30px; }
-  /* line 23, public/sass/_nav.scss */
+  /* line 17, public/sass/_nav.scss */
   nav li {
-    font-family: 'Modak', cursive;
+    font-family: "Fredericka the Great", cursive;
     font-size: 45px;
     width: 20%;
     height: 100%;
@@ -236,21 +228,17 @@ nav {
     align-items: center;
     list-style: none;
     white-space: nowrap; }
-    /* line 34, public/sass/_nav.scss */
-    nav li:hover {
-      cursor: pointer;
-      text-decoration: underline; }
 
 @media screen and (max-width: 1379px) and (min-width: 1271px) {
-  /* line 48, public/sass/_nav.scss */
+  /* line 36, public/sass/_nav.scss */
   nav ul {
     width: 100%; }
-  /* line 51, public/sass/_nav.scss */
+  /* line 39, public/sass/_nav.scss */
   nav li {
     width: 100%; } }
 
 @media screen and (max-width: 1270px) {
-  /* line 58, public/sass/_nav.scss */
+  /* line 46, public/sass/_nav.scss */
   ul {
     justify-content: left !important;
     align-items: center !important;
@@ -258,7 +246,7 @@ nav {
     padding: 20px;
     width: 100% !important;
     border: 3px solid black; }
-  /* line 67, public/sass/_nav.scss */
+  /* line 55, public/sass/_nav.scss */
   li {
     width: 100% !important;
     margin: 10px; } }
@@ -281,55 +269,60 @@ nav {
   nav .logo::after {
     position: absolute;
     content: "Doesthislooknormal";
-    color: black;
+    color: #bd6130;
     font-size: 45.3px;
     left: -5px;
     top: 2px;
     z-index: -1; }
   /* line 25, public/sass/_logo.scss */
   nav .logo::before {
+    font-weight: 900;
     position: absolute;
     content: "Doesthislooknormal";
-    color: red;
+    color: black;
     font-size: 45.5px;
     z-index: -1;
     left: 3px;
     letter-spacing: 4.9px; }
 
 @media screen and (max-width: 1270px) {
-  /* line 39, public/sass/_logo.scss */
+  /* line 40, public/sass/_logo.scss */
   .logo {
     display: none; }
-  /* line 42, public/sass/_logo.scss */
+  /* line 43, public/sass/_logo.scss */
   .logo::after {
     display: none; }
-  /* line 45, public/sass/_logo.scss */
+  /* line 46, public/sass/_logo.scss */
   .logo::before {
     display: none; } }
 
-/* line 12, public/sass/main.scss */
+/* line 13, public/sass/main.scss */
 html body {
+  font-family: "Yatra One", cursive;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: black; }
-  /* line 17, public/sass/main.scss */
+  /* line 19, public/sass/main.scss */
   html body a {
+    transform: skew(-20deg);
     text-decoration: none;
-    color: black; }
-    /* line 20, public/sass/main.scss */
+    color: #bd6130; }
+    /* line 23, public/sass/main.scss */
     html body a:hover {
-      cursor: pointer !important; }
+      cursor: pointer !important;
+      text-decoration: overline;
+      text-decoration-color: #ae44aa; }
 
-/* line 27, public/sass/main.scss */
+/* line 32, public/sass/main.scss */
 main {
   height: auto !important;
   width: 100%; }
-  /* line 31, public/sass/main.scss */
+  /* line 36, public/sass/main.scss */
   main .mainSection {
     width: 100%;
     height: auto; }
-    /* line 35, public/sass/main.scss */
+    /* line 40, public/sass/main.scss */
     main .mainSection .logoIMG {
       border: 3px solid black;
       position: relative;
@@ -339,16 +332,16 @@ main {
       object-fit: contain; }
 
 @media screen and (min-width: 600px) {
-  /* line 49, public/sass/main.scss */
+  /* line 54, public/sass/main.scss */
   main {
     height: 80vh;
     width: 95%;
     margin: auto !important; }
-    /* line 54, public/sass/main.scss */
+    /* line 59, public/sass/main.scss */
     main .mainSection {
       width: 100%;
       height: auto; }
-      /* line 58, public/sass/main.scss */
+      /* line 63, public/sass/main.scss */
       main .mainSection .logoIMG {
         width: 100%;
         height: auto; } }
