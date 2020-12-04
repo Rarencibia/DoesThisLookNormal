@@ -1,3 +1,32 @@
+/* line 1, public/sass/_aboutUs.scss */
+.aboutWrapper {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex !important;
+  background-color: white; }
+  /* line 9, public/sass/_aboutUs.scss */
+  .aboutWrapper .aboutImgWrapper {
+    width: 100%;
+    height: 100%; }
+  /* line 13, public/sass/_aboutUs.scss */
+  .aboutWrapper .aboutImg {
+    width: 100%; }
+  /* line 17, public/sass/_aboutUs.scss */
+  .aboutWrapper h1 {
+    text-align: center; }
+  /* line 20, public/sass/_aboutUs.scss */
+  .aboutWrapper .aboutInfo {
+    width: 100%; }
+  /* line 24, public/sass/_aboutUs.scss */
+  .aboutWrapper p {
+    padding: 20px;
+    font-family: "Fredericka the Great", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 10px white; }
+
 /* line 1, public/sass/_footer.scss */
 footer {
   font-family: "Fredericka the Great", cursive;
@@ -56,7 +85,7 @@ footer {
   width: 100%;
   height: auto;
   border: 3px solid black;
-  background-color: white; }
+  background-color: #6482DE; }
   /* line 6, public/sass/_createForm.scss */
   .createWrapper .creationInfo {
     width: 50%;
@@ -126,8 +155,9 @@ footer {
   height: auto;
   padding-bottom: 100px;
   color: black;
-  letter-spacing: 3px; }
-  /* line 8, public/sass/_miniShopHP.scss */
+  letter-spacing: 3px;
+  background-color: white; }
+  /* line 10, public/sass/_miniShopHP.scss */
   .miniShopSection .miniShopGrid {
     width: 100%;
     height: 100%;
@@ -136,12 +166,12 @@ footer {
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
     grid-gap: 100px; }
-  /* line 18, public/sass/_miniShopHP.scss */
+  /* line 21, public/sass/_miniShopHP.scss */
   .miniShopSection .shopImgContainer {
     position: relative;
     width: 100%;
     height: 400px; }
-  /* line 23, public/sass/_miniShopHP.scss */
+  /* line 26, public/sass/_miniShopHP.scss */
   .miniShopSection .miniShopImg {
     position: absolute;
     border: 3px solid black;
@@ -151,10 +181,10 @@ footer {
     image-rendering: pixelated;
     object-fit: cover;
     overflow: hidden; }
-    /* line 32, public/sass/_miniShopHP.scss */
+    /* line 35, public/sass/_miniShopHP.scss */
     .miniShopSection .miniShopImg:hover {
       opacity: .80; }
-  /* line 36, public/sass/_miniShopHP.scss */
+  /* line 39, public/sass/_miniShopHP.scss */
   .miniShopSection .miniProductInfo {
     font-size: 25px;
     position: absolute;
@@ -163,26 +193,26 @@ footer {
     background: darkgray;
     color: white;
     border-radius: 4px; }
-    /* line 44, public/sass/_miniShopHP.scss */
+    /* line 47, public/sass/_miniShopHP.scss */
     .miniShopSection .miniProductInfo:hover {
       text-shadow: 1px 2px 10px black;
       cursor: pointer;
       text-decoration: underline; }
 
-/* line 55, public/sass/_miniShopHP.scss */
+/* line 58, public/sass/_miniShopHP.scss */
 .introContainer {
   width: 40%;
   margin: auto; }
-  /* line 59, public/sass/_miniShopHP.scss */
+  /* line 62, public/sass/_miniShopHP.scss */
   .introContainer .intro {
     text-align: center; }
-  /* line 63, public/sass/_miniShopHP.scss */
+  /* line 66, public/sass/_miniShopHP.scss */
   .introContainer h1 {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
     letter-spacing: 5px;
     word-spacing: 10px; }
-  /* line 69, public/sass/_miniShopHP.scss */
+  /* line 72, public/sass/_miniShopHP.scss */
   .introContainer .introP {
     font-family: "Fredericka the Great", cursive;
     font-weight: bold;
@@ -191,10 +221,10 @@ footer {
     letter-spacing: -2px; }
 
 @media screen and (max-width: 1000px) {
-  /* line 81, public/sass/_miniShopHP.scss */
+  /* line 84, public/sass/_miniShopHP.scss */
   .introContainer {
     width: 100%; }
-    /* line 86, public/sass/_miniShopHP.scss */
+    /* line 89, public/sass/_miniShopHP.scss */
     .introContainer .introMedia {
       padding: 20px;
       text-align: left;
@@ -208,8 +238,9 @@ nav {
   align-items: center;
   background-color: #f4e7a1;
   z-index: -4;
-  overflow: none; }
-  /* line 9, public/sass/_nav.scss */
+  overflow: none;
+  box-shadow: 3px 3px 10px black; }
+  /* line 10, public/sass/_nav.scss */
   nav ul {
     width: 80%;
     height: 70px;
@@ -217,7 +248,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 30px; }
-  /* line 17, public/sass/_nav.scss */
+  /* line 18, public/sass/_nav.scss */
   nav li {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
@@ -230,15 +261,15 @@ nav {
     white-space: nowrap; }
 
 @media screen and (max-width: 1379px) and (min-width: 1271px) {
-  /* line 36, public/sass/_nav.scss */
+  /* line 37, public/sass/_nav.scss */
   nav ul {
     width: 100%; }
-  /* line 39, public/sass/_nav.scss */
+  /* line 40, public/sass/_nav.scss */
   nav li {
     width: 100%; } }
 
 @media screen and (max-width: 1270px) {
-  /* line 46, public/sass/_nav.scss */
+  /* line 47, public/sass/_nav.scss */
   ul {
     justify-content: left !important;
     align-items: center !important;
@@ -246,7 +277,7 @@ nav {
     padding: 20px;
     width: 100% !important;
     border: 3px solid black; }
-  /* line 55, public/sass/_nav.scss */
+  /* line 56, public/sass/_nav.scss */
   li {
     width: 100% !important;
     margin: 10px; } }
@@ -271,58 +302,60 @@ nav {
     content: "Doesthislooknormal";
     color: #bd6130;
     font-size: 45.3px;
+    font-weight: 500;
     left: -5px;
     top: 2px;
     z-index: -1; }
-  /* line 25, public/sass/_logo.scss */
+  /* line 26, public/sass/_logo.scss */
   nav .logo::before {
     font-weight: 900;
     position: absolute;
     content: "Doesthislooknormal";
     color: black;
-    font-size: 45.5px;
+    font-size: 46px;
+    font-weight: 500;
     z-index: -1;
     left: 3px;
-    letter-spacing: 4.9px; }
+    letter-spacing: 4.7px; }
 
 @media screen and (max-width: 1270px) {
-  /* line 40, public/sass/_logo.scss */
+  /* line 42, public/sass/_logo.scss */
   .logo {
     display: none; }
-  /* line 43, public/sass/_logo.scss */
+  /* line 45, public/sass/_logo.scss */
   .logo::after {
     display: none; }
-  /* line 46, public/sass/_logo.scss */
+  /* line 48, public/sass/_logo.scss */
   .logo::before {
     display: none; } }
 
-/* line 13, public/sass/main.scss */
+/* line 14, public/sass/main.scss */
 html body {
   font-family: "Yatra One", cursive;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: black; }
-  /* line 19, public/sass/main.scss */
+  background-color: #F0AA2B; }
+  /* line 20, public/sass/main.scss */
   html body a {
-    transform: skew(-20deg);
+    font-weight: bold;
     text-decoration: none;
-    color: #bd6130; }
-    /* line 23, public/sass/main.scss */
+    color: black; }
+    /* line 24, public/sass/main.scss */
     html body a:hover {
       cursor: pointer !important;
       text-decoration: overline;
-      text-decoration-color: #ae44aa; }
+      text-decoration-color: orange; }
 
-/* line 32, public/sass/main.scss */
+/* line 33, public/sass/main.scss */
 main {
   height: auto !important;
   width: 100%; }
-  /* line 36, public/sass/main.scss */
+  /* line 37, public/sass/main.scss */
   main .mainSection {
     width: 100%;
     height: auto; }
-    /* line 40, public/sass/main.scss */
+    /* line 41, public/sass/main.scss */
     main .mainSection .logoIMG {
       border: 3px solid black;
       position: relative;
@@ -332,16 +365,16 @@ main {
       object-fit: contain; }
 
 @media screen and (min-width: 600px) {
-  /* line 54, public/sass/main.scss */
+  /* line 55, public/sass/main.scss */
   main {
     height: 80vh;
     width: 95%;
     margin: auto !important; }
-    /* line 59, public/sass/main.scss */
+    /* line 60, public/sass/main.scss */
     main .mainSection {
       width: 100%;
       height: auto; }
-      /* line 63, public/sass/main.scss */
+      /* line 64, public/sass/main.scss */
       main .mainSection .logoIMG {
         width: 100%;
         height: auto; } }

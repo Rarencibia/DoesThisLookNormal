@@ -3,8 +3,9 @@ $paragraph-font: 'Yatra One', cursive;
 $mini-header-font: 'Ewert', cursive;
 $logo-font: 'Fredericka the Great', cursive;
 
+@import './aboutUs';
 @import './footer';
-@import './createForm.scss';
+@import './createForm';
 @import './miniShopHP';
 @import './nav';
 @import './logo';
@@ -15,15 +16,15 @@ html body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #F0AA2B;
     a {
-        transform: skew(-20deg);
+        font-weight: bold;
         text-decoration: none;
-        color: rgb(189, 97, 48);
+        color: black;
         &:hover{
             cursor: pointer!important;
             text-decoration: overline;
-            text-decoration-color: 	rgb(174, 68, 170);
+            text-decoration-color: 	orange;
         }
 }
 }
