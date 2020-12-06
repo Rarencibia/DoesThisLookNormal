@@ -1,24 +1,55 @@
+/* line 1, public/sass/_shop.scss */
+.gridWrapper {
+  font-family: "Fredericka the Great", cursive;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 100px;
+  margin-bottom: 1000px;
+  text-align: center; }
+  /* line 13, public/sass/_shop.scss */
+  .gridWrapper #gridContainer {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 1.5%; }
+  /* line 22, public/sass/_shop.scss */
+  .gridWrapper #itemPicture {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: auto !important; }
+  /* line 29, public/sass/_shop.scss */
+  .gridWrapper #itemName {
+    width: 100%;
+    margin: 0;
+    text-align: center; }
+
 /* line 1, public/sass/_aboutUs.scss */
 .aboutWrapper {
   width: 80%;
   height: auto;
   margin: auto;
-  display: flex !important;
-  background-color: white; }
-  /* line 9, public/sass/_aboutUs.scss */
+  display: flex !important; }
+  /* line 8, public/sass/_aboutUs.scss */
   .aboutWrapper .aboutImgWrapper {
     width: 100%;
     height: 100%; }
-  /* line 13, public/sass/_aboutUs.scss */
+  /* line 12, public/sass/_aboutUs.scss */
   .aboutWrapper .aboutImg {
     width: 100%; }
-  /* line 17, public/sass/_aboutUs.scss */
+  /* line 16, public/sass/_aboutUs.scss */
   .aboutWrapper h1 {
     text-align: center; }
-  /* line 20, public/sass/_aboutUs.scss */
+  /* line 19, public/sass/_aboutUs.scss */
   .aboutWrapper .aboutInfo {
-    width: 100%; }
-  /* line 24, public/sass/_aboutUs.scss */
+    background-color: #DBFEFF;
+    width: 100%;
+    box-shadow: 10px 10px 10px black; }
+  /* line 25, public/sass/_aboutUs.scss */
   .aboutWrapper p {
     padding: 20px;
     font-family: "Fredericka the Great", cursive;
@@ -84,8 +115,7 @@ footer {
 .createWrapper {
   width: 100%;
   height: auto;
-  border: 3px solid black;
-  background-color: #6482DE; }
+  background-color: #DBFEFF; }
   /* line 6, public/sass/_createForm.scss */
   .createWrapper .creationInfo {
     width: 50%;
@@ -156,7 +186,7 @@ footer {
   padding-bottom: 100px;
   color: black;
   letter-spacing: 3px;
-  background-color: white; }
+  background-color: #DBFEFF; }
   /* line 10, public/sass/_miniShopHP.scss */
   .miniShopSection .miniShopGrid {
     width: 100%;
@@ -236,7 +266,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #f4e7a1;
+  background-color: #6FA6A8;
   z-index: -4;
   overflow: none;
   box-shadow: 3px 3px 10px black; }
@@ -300,7 +330,7 @@ nav {
   nav .logo::after {
     position: absolute;
     content: "Doesthislooknormal";
-    color: #bd6130;
+    color: #DBFEFF;
     font-size: 45.3px;
     font-weight: 500;
     left: -5px;
@@ -329,33 +359,33 @@ nav {
   .logo::before {
     display: none; } }
 
-/* line 14, public/sass/main.scss */
+/* line 15, public/sass/main.scss */
 html body {
   font-family: "Yatra One", cursive;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #F0AA2B; }
-  /* line 20, public/sass/main.scss */
+  background-color: #BAF3F5; }
+  /* line 22, public/sass/main.scss */
   html body a {
     font-weight: bold;
     text-decoration: none;
     color: black; }
-    /* line 24, public/sass/main.scss */
+    /* line 26, public/sass/main.scss */
     html body a:hover {
       cursor: pointer !important;
       text-decoration: overline;
-      text-decoration-color: orange; }
+      text-decoration-color: #DBFEFF; }
 
-/* line 33, public/sass/main.scss */
+/* line 35, public/sass/main.scss */
 main {
   height: auto !important;
   width: 100%; }
-  /* line 37, public/sass/main.scss */
+  /* line 39, public/sass/main.scss */
   main .mainSection {
     width: 100%;
     height: auto; }
-    /* line 41, public/sass/main.scss */
+    /* line 43, public/sass/main.scss */
     main .mainSection .logoIMG {
       border: 3px solid black;
       position: relative;
@@ -365,16 +395,16 @@ main {
       object-fit: contain; }
 
 @media screen and (min-width: 600px) {
-  /* line 55, public/sass/main.scss */
+  /* line 57, public/sass/main.scss */
   main {
     height: 80vh;
     width: 95%;
     margin: auto !important; }
-    /* line 60, public/sass/main.scss */
+    /* line 62, public/sass/main.scss */
     main .mainSection {
       width: 100%;
       height: auto; }
-      /* line 64, public/sass/main.scss */
+      /* line 66, public/sass/main.scss */
       main .mainSection .logoIMG {
         width: 100%;
         height: auto; } }

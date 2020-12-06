@@ -1,0 +1,39 @@
+.gridWrapper {
+    font-family: $logo-font;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-column-gap: 100px;
+    margin-bottom: 1000px;
+    text-align: center;
+
+
+    #gridContainer {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 1.5%;
+
+    }
+
+    #itemPicture{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: auto!important;
+    }
+
+    #itemName {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+    }
+
+
+
+}
+

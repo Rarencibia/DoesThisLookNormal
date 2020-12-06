@@ -18,6 +18,9 @@ app.use('/users', usersRouter);
 var aboutUsRouter = require('./routes/aboutUs');
 app.use('/aboutUs', aboutUsRouter);
 
+var shopRouter = require('./routes/shop');
+app.use('/shop', shopRouter);
+
 
 
 // view engine setup

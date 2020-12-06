@@ -3,6 +3,7 @@ $paragraph-font: 'Yatra One', cursive;
 $mini-header-font: 'Ewert', cursive;
 $logo-font: 'Fredericka the Great', cursive;
 
+@import './shop';
 @import './aboutUs';
 @import './footer';
 @import './createForm';
@@ -16,7 +17,8 @@ html body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #F0AA2B;
+    background-color: #BAF3F5;
+    
     a {
         font-weight: bold;
         text-decoration: none;
@@ -24,7 +26,7 @@ html body {
         &:hover{
             cursor: pointer!important;
             text-decoration: overline;
-            text-decoration-color: 	orange;
+            text-decoration-color: 	#DBFEFF;
         }
 }
 }
