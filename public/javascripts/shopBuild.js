@@ -8,25 +8,35 @@ async function getData() {
 
 
 
-    for(let i = 0; i < data.mugs.length; i++){
+
+
+    for(let i = 0; i < data.inventory.length; i++){
+        console.log(data.inventory[i].name);
 
         let gridContainer = document.createElement("div");
         gridContainer.setAttribute("id", "gridContainer");
 
+
+        
+
         let itemName = document.createElement("h1");
         itemName.setAttribute("id", "itemName");
-        itemName.innerText = data.mugs[i].name;
+        itemName.innerText = data.inventory[i].name;
 
         let itemPicture = document.createElement("img");
-        itemPicture.src = data.mugs[i].picture;
+        itemPicture.src = data.inventory[i].picture;
         itemPicture.setAttribute("id", "itemPicture");
 
         let value = document.createElement("h3");
         value.setAttribute("id", "value");
-        value.innerText= "$" + data.mugs[i].value;
+        value.innerText= "$" + data.inventory[i].value;
+
+        let buttonContainer = document.createElement("div");
+        buttonContainer.setAttribute("id", "buttonContainer");
 
         let addToCart = document.createElement("button");
-        addToCart.setAttribute("id", data.mugs[i].id);
+        addToCart.setAttribute("id", data.inventory[i].id);
+        addToCart.setAttribute("class", "shopButtons")
         addToCart.textContent = "Add To Cart";
         addToCart.style.margin = "auto";
 
@@ -34,17 +44,25 @@ async function getData() {
         gridContainer.appendChild(itemName);
         gridContainer.appendChild(itemPicture);
         gridContainer.appendChild(value);
-        gridContainer.appendChild(addToCart);
+        gridContainer.appendChild(buttonContainer);
+        buttonContainer.appendChild(addToCart);
 
+                    
 
-
+        
+    
 
 
     }
     
-
-    
-    
+    let theParent = document.getElementById("gridWrapper");
+    theParent.addEventListener("click", (e) => {
+        if(e.target !== e.currentTarget){
+            var clickedItem = e.target.id
+            alert("hello " + clickedItem);
+        }
+        e.stopPropagation();
+    },false)
 
 
 

@@ -1,9 +1,11 @@
 {
-    "mugs": [
-        {"name": "Blue Mug", "id": 0, "value": 7, "picture": "images/miniShop/drinkWear.jpg"  },
-        {"name": "Red Mug", "id": 1, "value": 4, "picture": "images/miniShop/drinkWear.jpg" },
-        {"name": "Green Mug", "id": 2, "value": 8, "picture": "images/miniShop/drinkWear.jpg"  },
-        {"name": "Yellow", "id": 3, "value": 14, "picture": "images/miniShop/drinkWear.jpg"  }
-
+    "inventory": [
+        {"name": "Blue Mug", "id": 0, "value": 7, "type": "drinkwear", "picture": "images/miniShop/drinkWear.jpg"  },
+        {"name": "Red Mug", "id": 1, "value": 4, "type": "drinkwear", "picture": "images/miniShop/drinkWear.jpg" },
+        {"name": "Green Mug", "id": 2, "value": 8, "type": "drinkwear", "picture": "images/miniShop/drinkWear.jpg"  },
+        {"name": "Yellow", "id": 3, "value": 14, "type": "drinkwear", "picture": "images/miniShop/drinkWear.jpg"  }
     ]
+    
 }
+
+
