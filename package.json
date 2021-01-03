@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "scss": "node-sass -watch scss public/sass/main.scss public/stylesheets/main.css"
   },
   "dependencies": {
