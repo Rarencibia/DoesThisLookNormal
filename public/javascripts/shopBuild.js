@@ -7,11 +7,12 @@ async function getData() {
 
 
 
+    let shoppingCart = [];
+
 
 
 
     for(let i = 0; i < data.inventory.length; i++){
-        console.log(data.inventory[i].name);
 
         let gridContainer = document.createElement("div");
         gridContainer.setAttribute("id", "gridContainer");
@@ -47,7 +48,7 @@ async function getData() {
         gridContainer.appendChild(buttonContainer);
         buttonContainer.appendChild(addToCart);
 
-                    
+
 
         
     
@@ -58,11 +59,14 @@ async function getData() {
     let theParent = document.getElementById("gridWrapper");
     theParent.addEventListener("click", (e) => {
         if(e.target !== e.currentTarget){
-            var clickedItem = e.target.id
-            alert("hello " + clickedItem);
+            var clickedItem = e.target.id;
+            shoppingCart.push(clickedItem);
+            localStorage.setItem("quickShop", shoppingCart );
+            let showCart = localStorage.getItem("quickShop");
+            console.log(showCart);
+            console.log(shoppingCart);
         }
-        e.stopPropagation();
-    },false)
+    });
 
 
 
