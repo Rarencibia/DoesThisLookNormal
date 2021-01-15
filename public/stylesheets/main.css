@@ -301,8 +301,9 @@ nav {
   background-color: #6FA6A8;
   z-index: -4;
   overflow: none;
-  box-shadow: 3px 3px 10px black; }
-  /* line 10, public/sass/_nav.scss */
+  box-shadow: 3px 3px 10px black;
+  padding: 15px; }
+  /* line 12, public/sass/_nav.scss */
   nav ul {
     width: 80%;
     height: 70px;
@@ -310,7 +311,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 30px; }
-  /* line 18, public/sass/_nav.scss */
+  /* line 20, public/sass/_nav.scss */
   nav li {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
@@ -323,23 +324,22 @@ nav {
     white-space: nowrap; }
 
 @media screen and (max-width: 1379px) and (min-width: 1271px) {
-  /* line 37, public/sass/_nav.scss */
+  /* line 39, public/sass/_nav.scss */
   nav ul {
     width: 100%; }
-  /* line 40, public/sass/_nav.scss */
+  /* line 42, public/sass/_nav.scss */
   nav li {
     width: 100%; } }
 
 @media screen and (max-width: 1270px) {
-  /* line 47, public/sass/_nav.scss */
+  /* line 49, public/sass/_nav.scss */
   ul {
     justify-content: left !important;
     align-items: center !important;
     margin: auto;
     padding: 20px;
-    width: 100% !important;
-    border: 3px solid black; }
-  /* line 56, public/sass/_nav.scss */
+    width: 100% !important; }
+  /* line 57, public/sass/_nav.scss */
   li {
     width: 100% !important;
     margin: 10px; } }
@@ -391,33 +391,33 @@ nav {
   .logo::before {
     display: none; } }
 
-/* line 15, public/sass/main.scss */
+/* line 16, public/sass/main.scss */
 html body {
   font-family: "Yatra One", cursive;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: #BAF3F5; }
-  /* line 22, public/sass/main.scss */
+  /* line 23, public/sass/main.scss */
   html body a {
     font-weight: bold;
     text-decoration: none;
     color: black; }
-    /* line 26, public/sass/main.scss */
+    /* line 27, public/sass/main.scss */
     html body a:hover {
       cursor: pointer !important;
       text-decoration: overline;
       text-decoration-color: #DBFEFF; }
 
-/* line 35, public/sass/main.scss */
+/* line 36, public/sass/main.scss */
 main {
   height: auto !important;
   width: 100%; }
-  /* line 39, public/sass/main.scss */
+  /* line 40, public/sass/main.scss */
   main .mainSection {
     width: 100%;
     height: auto; }
-    /* line 43, public/sass/main.scss */
+    /* line 44, public/sass/main.scss */
     main .mainSection .logoIMG {
       border: 3px solid black;
       position: relative;
@@ -427,16 +427,16 @@ main {
       object-fit: contain; }
 
 @media screen and (min-width: 600px) {
-  /* line 57, public/sass/main.scss */
+  /* line 58, public/sass/main.scss */
   main {
     height: 80vh;
     width: 95%;
     margin: auto !important; }
-    /* line 62, public/sass/main.scss */
+    /* line 63, public/sass/main.scss */
     main .mainSection {
       width: 100%;
       height: auto; }
-      /* line 66, public/sass/main.scss */
+      /* line 67, public/sass/main.scss */
       main .mainSection .logoIMG {
         width: 100%;
         height: auto; } }

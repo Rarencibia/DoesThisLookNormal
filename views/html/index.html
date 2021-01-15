@@ -7,11 +7,13 @@
       <article class="introContainer" data-aos="fade-left">
         <div class="introMedia">
           <div class="intro">
-            <h1>Our Shop</h1>
+            <h1>Featured Items</h1>
           </div>
-          <div class="introP">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae quo, cumque temporibus nulla commodi sed aliquam numquam! Voluptas incidunt repellat voluptatem voluptate eligendi eveniet dolore nemo nihil temporibus! Fugit.</p>
-          </div>
+          <!-- <div class="introP">
+            <p>
+              
+            </p>
+          </div> -->
         </div>
       </article>
 
@@ -67,16 +69,16 @@
         </p>
       </article>
 
-      <form class="formWrapper" data-aos="zoom-in" action="mailto:doesthislooknormal@gmail.com" method="POST" enctype="text/plain">
-        <input class="createInput" type="text" placeholder="Your Name" required>
+      <form class="formWrapper" data-aos="zoom-in" action="mailHandler.php" method="POST" enctype="text/plain">
+        <input class="createInput" name="name" type="text" placeholder="Your Name" required>
         
-        <input class="createInput" type="email" placeholder="Your Email Address" required>
+        <input class="createInput" name="email" type="email" placeholder="Your Email Address" required>
 
-        <input class="createInput" type="text" placeholder="Type of Material" required>
+        <input class="createInput" name="item" type="text" placeholder="Type of Material" required>
 
-        <textarea class="createInput" name="textBox" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
+        <textarea class="createInput" name="msg" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
 
-        <button>Submit</button>
+        <button class="formButton">Submit</button>
       </form>
     </section>
 </main>

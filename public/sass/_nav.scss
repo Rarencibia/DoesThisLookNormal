@@ -6,6 +6,8 @@ nav {
     z-index: -4;
     overflow: none;
     box-shadow: 3px 3px 10px black;
+    padding: 15px;
+    
 
     ul {
         width: 80%;
@@ -50,7 +52,6 @@ nav {
         margin: auto;
         padding: 20px;
         width: 100%!important;
-        border: 3px solid black;
     }
 
     li {
