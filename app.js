@@ -7,8 +7,7 @@ var sassMiddleware = require('node-sass-middleware');
 
 
 var app = express();
-//Mail Sender
-const sendMail = require('./public/javascripts/mail.js')
+
 
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
@@ -22,6 +21,8 @@ app.use('/aboutUs', aboutUsRouter);
 var shopRouter = require('./routes/shop');
 app.use('/shop', shopRouter);
 
+var mailRouter = require('./routes/mailHandler');
+app.use('/email', mailRouter);
 
 
 // view engine setup
@@ -40,18 +41,7 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//send Email function
-app.post('/email', (req, res) => {
-  const { subject, email, text } = req.body;
-  console.log('data: ', req.body);
-  sendMail(userName, email, item, msg, function (err, data) {
-    if(err) {
-      res.status(500).json({ message: 'Internal Error'});
-    }else {
-      res.json({ message: 'Email Sent! You will hear back from us shortly!'});
-    }
-  });
-});
+
 
 
 // catch 404 and forward to error handler
