@@ -34,7 +34,9 @@ router.get('/', (req, res) => {
 });
 router.post('/', (req, res) => {
 // console.log('data: ', req.body);
-    res.send("hello");
+    // res.send("hello");
+    res.status(500).json({ message: 'test_error'});
+
     // const { subject, email, text } = req.body;
     // console.log('data: ', req.body);
     // sendMail(userName, email, item, msg, function (err, data) {
