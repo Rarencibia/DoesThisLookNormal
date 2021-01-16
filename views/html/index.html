@@ -69,21 +69,44 @@
         </p>
       </article>
 
-      <form class="formWrapper" data-aos="zoom-in" action="mailHandler.php" method="POST" enctype="text/plain">
-        <input class="createInput" name="name" type="text" placeholder="Your Name" required>
+      <form class="formWrapper" data-aos="zoom-in"  id="formData"">
+        <input class="createInput" name="userName" id="userName" type="text" placeholder="Your Name" required>
         
-        <input class="createInput" name="email" type="email" placeholder="Your Email Address" required>
+        <input class="createInput" name="email" id="userEmail" type="email" placeholder="Your Email Address" required>
 
-        <input class="createInput" name="item" type="text" placeholder="Type of Material" required>
+        <input class="createInput" name="item" id="userItem" type="text" placeholder="Type of Material" required>
 
-        <textarea class="createInput" name="msg" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
+        <textarea class="createInput" name="msg" id="userMsg" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
 
-        <button class="formButton">Submit</button>
+        <input type="submit" name="submit" id="submit" value="Send" class="button"> 
       </form>
     </section>
 </main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script>
+  $('#formData').on('submit', (e) => {
+    e.preventDefault();
+
+    const userName = $('#userName').val().trim();
+    const email = $('#userEmail').val().trim();
+    const item = $('#userItem').val().trim();
+    const msg = $('#userMsg').val().trim();
+
+    const data = {
+      userName,
+      email,
+      item,
+      msg
+    };
+
+    $.post('/email', data, function(){
+      console.log("Email Sent!");
+    });
+
+  })
+</script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -95,3 +118,4 @@
   }
   );
 </script>
+

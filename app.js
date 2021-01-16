@@ -7,7 +7,8 @@ var sassMiddleware = require('node-sass-middleware');
 
 
 var app = express();
-
+//Mail Sender
+const sendMail = require('./public/javascripts/mail.js')
 
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
@@ -39,7 +40,18 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+//send Email function
+app.post('/email', (req, res) => {
+  const { subject, email, text } = req.body;
+  console.log('data: ', req.body);
+  sendMail(userName, email, item, msg, function (err, data) {
+    if(err) {
+      res.status(500).json({ message: 'Internal Error'});
+    }else {
+      res.json({ message: 'Email Sent! You will hear back from us shortly!'});
+    }
+  });
+});
 
 
 // catch 404 and forward to error handler
@@ -55,7 +67,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error');  
 });
 
 module.exports = app;
