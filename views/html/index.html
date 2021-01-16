@@ -11,7 +11,7 @@
           </div>
           <!-- <div class="introP">
             <p>
-              
+
             </p>
           </div> -->
         </div>
@@ -22,17 +22,17 @@
           <a href="#"><img class="miniShopImg" src="images/miniShop/homeDecor.jpg" alt=""></a>
           <p class="miniProductInfo">Home Decor</p>
         </div>
-        
+
         <div class="item2 shopImgContainer">
           <a href="#"><img class="miniShopImg" src="images/miniShop/drinkWear.jpg" alt=""></a>
           <p class="miniProductInfo">Drinkwear</p>
         </div>
-        
+
         <div class="item3 shopImgContainer">
           <a href="#"><img class="miniShopImg" src="images/miniShop/accessories.jpg" alt=""></a>
           <p class="miniProductInfo">Accessories</p>
         </div>
-        
+
         <div class="item4 shopImgContainer">
           <a href="#"><img class="miniShopImg" src="images/miniShop/jewelry.jpg" alt=""></a>
           <p class="miniProductInfo">Jewelry</p>
@@ -71,14 +71,14 @@
 
       <form class="formWrapper" data-aos="zoom-in"  id="formData"">
         <input class="createInput" name="userName" id="userName" type="text" placeholder="Your Name" required>
-        
+
         <input class="createInput" name="email" id="userEmail" type="email" placeholder="Your Email Address" required>
 
         <input class="createInput" name="item" id="userItem" type="text" placeholder="Type of Material" required>
 
         <textarea class="createInput" name="msg" id="userMsg" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
 
-        <input type="submit" name="submit" id="submit" value="Send" class="button"> 
+        <input type="submit" name="submit" id="submit" value="Send" class="button">
       </form>
     </section>
 </main>
@@ -101,7 +101,11 @@
       msg
     };
 
-    $.post('/email', data, function(){
+    $.post('/email', data, function(data, status){
+
+      console.log("email:");
+      console.log("data: " + data);
+      console.log("status: " + status);
       console.log("Email Sent!");
     });
 
@@ -118,4 +122,3 @@
   }
   );
 </script>
-
