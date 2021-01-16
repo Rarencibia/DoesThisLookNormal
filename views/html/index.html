@@ -107,6 +107,9 @@
       console.log("data: " + data);
       console.log("status: " + status);
       console.log("Email Sent!");
+    }).fail(function(response) {
+        console.log('(custom)Error: ' + response.responseText);
+        // alert('(custom)Error: ' + response.responseText);
     });
 
   })
