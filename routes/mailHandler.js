@@ -35,18 +35,18 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
 // console.log('data: ', req.body);
     // res.send("hello");
-    res.status(500).json({ message: 'test_error'});
+    // res.status(500).json({ message: 'test_error'});
 
-    // const { subject, email, text } = req.body;
-    // console.log('data: ', req.body);
-    // sendMail(userName, email, item, msg, function (err, data) {
-    //   if(err) {
-    //     res.status(500).json({ message: 'Internal Error'});
-    //     res.send("mail failed");
-    //   }else {
-    //     res.json({ message: 'Email Sent! You will hear back from us shortly!'});
-    //   }
-    // });
+    const { subject, email, text } = req.body;
+    console.log('data: ', req.body);
+    sendMail(userName, email, item, msg, function (err, data) {
+      if(err) {
+        res.status(500).json({ message: 'Internal Error'});
+        res.send("mail failed");
+      }else {
+        res.json({ message: 'Email Sent! You will hear back from us shortly!'});
+      }
+    });
 });
 
 module.exports = router;
