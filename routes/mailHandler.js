@@ -43,15 +43,15 @@ router.post('/', (req, res) => {
 
 
     res.send("hello");
-    res.status(500).json({ message: 'test_error'});
+    // res.status(500).json({ message: 'test_error'});
 
-    sendMail(userName, email, item, text, function (err, data) {
-        if(err) {
-            res.status(500).json({ message: 'Internal Error'});
-        }else {
-            res.json({ message: 'Email Sent! You will hear back from us shortly!'});
-        }
-    });
+    // sendMail(userName, email, item, text, function (err, data) {
+    //     if(err) {
+    //         res.status(500).json({ message: 'Internal Error'});
+    //     }else {
+    //         res.json({ message: 'Email Sent! You will hear back from us shortly!'});
+    //     }
+    // });
 });
 
 module.exports = router;
