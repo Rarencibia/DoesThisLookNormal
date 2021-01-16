@@ -34,7 +34,7 @@ const sendMail = (userName, email, item, msg, cb) => {
 
 };
 
-app.post('/', (req, res) => {
+router.post('/', (req, res) => {
     const { subject, email, text } = req.body;
     console.log('data: ', req.body);
     sendMail(userName, email, item, msg, function (err, data) {
