@@ -5,7 +5,7 @@ var router = express.Router();
 const nodemailer = require('nodemailer');
 const mailGun = require('nodemailer-mailgun-transport');
 
-const auth = require('../routes/secret_auth.js');
+const auth = require('../routes/secretAuth.js');
 const transporter = nodemailer.createTransport(mailGun(auth));
 
 const sendMail = (userName, email, item, msg, cb) => {
