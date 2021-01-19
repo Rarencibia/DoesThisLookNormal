@@ -8,13 +8,13 @@ const mailGun = require('nodemailer-mailgun-transport');
 const auth = require('../routes/secretAuth.js');
 const transporter = nodemailer.createTransport(mailGun(auth));
 
-const sendMail = (userName, email, item, msg, cb) => {
+const sendMail = (email, userName, item, msg, cb) => {
     const mailOptions = {
+        from: email,
+        to: 'Rarencibia@comcast.net',
         userName,
-        email,
         item,
         msg,
-        to: 'Rarencibia@comcast.net',
     };
 
     transporter.sendMail(mailOptions, function (err,data) {
@@ -32,26 +32,26 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    var email = "Rarencibia@comcast.net";
     var userName = "userName";
     var item = "item";
-    var subject = "subject";
-    var email = "email";
-    var text = "text";
+    var msg = "msg";
 
+    const {email, userName, item, msg} = req.body;
     console.log('req.body: ', req.body);
 
 
 
-    res.send("hello");
-    // res.status(500).json({ message: 'test_error'});
+    // res.send("hello");
+    res.status(500).json({ message: 'test_error'});
 
-    // sendMail(userName, email, item, text, function (err, data) {
-    //     if(err) {
-    //         res.status(500).json({ message: 'Internal Error'});
-    //     }else {
-    //         res.json({ message: 'Email Sent! You will hear back from us shortly!'});
-    //     }
-    // });
+    sendMail(email, userName, item, msg, function (err, data) {
+        if(err) {
+            res.status(500).json({ message: 'Internal Error'});
+        }else {
+            res.json({ message: 'Email Sent! You will hear back from us shortly!'});
+        }
+    });
 });
 
 module.exports = router;
