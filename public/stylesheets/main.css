@@ -62,33 +62,50 @@
 
 /* line 1, public/sass/_aboutUs.scss */
 .aboutWrapper {
+  position: relative;
   width: 80%;
   height: auto;
   margin: auto;
   display: flex !important; }
-  /* line 8, public/sass/_aboutUs.scss */
+  /* line 9, public/sass/_aboutUs.scss */
   .aboutWrapper .aboutImgWrapper {
+    position: absolute;
     width: 100%;
-    height: 100%; }
-  /* line 12, public/sass/_aboutUs.scss */
-  .aboutWrapper .aboutImg {
-    width: 100%; }
+    height: 100%;
+    opacity: .30; }
   /* line 16, public/sass/_aboutUs.scss */
+  .aboutWrapper .aboutImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  /* line 23, public/sass/_aboutUs.scss */
   .aboutWrapper h1 {
-    text-align: center; }
-  /* line 19, public/sass/_aboutUs.scss */
+    text-align: center;
+    font-size: 40px;
+    font-family: "Fredericka the Great", cursive;
+    font-weight: 900;
+    letter-spacing: 3px; }
+  /* line 30, public/sass/_aboutUs.scss */
   .aboutWrapper .aboutInfo {
     background-color: #DBFEFF;
     width: 100%;
     box-shadow: 10px 10px 10px black; }
-  /* line 25, public/sass/_aboutUs.scss */
+  /* line 36, public/sass/_aboutUs.scss */
   .aboutWrapper p {
-    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 30px;
     font-family: "Fredericka the Great", cursive;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 0px 1px 10px white; }
+
+@media screen and (max-width: 1100px) {
+  /* line 50, public/sass/_aboutUs.scss */
+  .aboutWrapper {
+    width: 100%;
+    margin: auto; } }
 
 /* line 1, public/sass/_footer.scss */
 footer {
@@ -239,14 +256,15 @@ footer {
     border: 3px solid black;
     width: 100%;
     height: 100%;
-    border-radius: 100px;
     image-rendering: pixelated;
     object-fit: cover;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 2px; }
     /* line 35, public/sass/_miniShopHP.scss */
     .miniShopSection .miniShopImg:hover {
-      opacity: .80; }
-  /* line 39, public/sass/_miniShopHP.scss */
+      opacity: .80;
+      cursor: pointer; }
+  /* line 40, public/sass/_miniShopHP.scss */
   .miniShopSection .miniProductInfo {
     font-size: 25px;
     position: absolute;
@@ -255,26 +273,34 @@ footer {
     background: darkgray;
     color: white;
     border-radius: 4px; }
-    /* line 47, public/sass/_miniShopHP.scss */
+    /* line 48, public/sass/_miniShopHP.scss */
     .miniShopSection .miniProductInfo:hover {
       text-shadow: 1px 2px 10px black;
       cursor: pointer;
       text-decoration: underline; }
+  /* line 54, public/sass/_miniShopHP.scss */
+  .miniShopSection .ecsp, .miniShopSection .ecsp-SingleProduct-v2, .miniShopSection .ecsp-Product, .miniShopSection .ec-Product-283334102 {
+    display: block !important;
+    vertical-align: bottom !important; }
+    /* line 58, public/sass/_miniShopHP.scss */
+    .miniShopSection .ecsp:hover, .miniShopSection .ecsp-SingleProduct-v2:hover, .miniShopSection .ecsp-Product:hover, .miniShopSection .ec-Product-283334102:hover {
+      opacity: .80;
+      transform: scale(1.1); }
 
-/* line 58, public/sass/_miniShopHP.scss */
+/* line 68, public/sass/_miniShopHP.scss */
 .introContainer {
   width: 40%;
   margin: auto; }
-  /* line 62, public/sass/_miniShopHP.scss */
+  /* line 72, public/sass/_miniShopHP.scss */
   .introContainer .intro {
     text-align: center; }
-  /* line 66, public/sass/_miniShopHP.scss */
+  /* line 76, public/sass/_miniShopHP.scss */
   .introContainer h1 {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
     letter-spacing: 5px;
     word-spacing: 10px; }
-  /* line 72, public/sass/_miniShopHP.scss */
+  /* line 82, public/sass/_miniShopHP.scss */
   .introContainer .introP {
     font-family: "Fredericka the Great", cursive;
     font-weight: bold;
@@ -283,10 +309,10 @@ footer {
     letter-spacing: -2px; }
 
 @media screen and (max-width: 1000px) {
-  /* line 84, public/sass/_miniShopHP.scss */
+  /* line 94, public/sass/_miniShopHP.scss */
   .introContainer {
     width: 100%; }
-    /* line 89, public/sass/_miniShopHP.scss */
+    /* line 99, public/sass/_miniShopHP.scss */
     .introContainer .introMedia {
       padding: 20px;
       text-align: left;
@@ -300,10 +326,10 @@ nav {
   align-items: center;
   background-color: #6FA6A8;
   z-index: -4;
-  overflow: none;
+  overflow: hidden;
   box-shadow: 3px 3px 10px black;
-  padding: 15px; }
-  /* line 12, public/sass/_nav.scss */
+  margin: auto; }
+  /* line 11, public/sass/_nav.scss */
   nav ul {
     width: 80%;
     height: 70px;
@@ -311,7 +337,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     font-size: 30px; }
-  /* line 20, public/sass/_nav.scss */
+  /* line 19, public/sass/_nav.scss */
   nav li {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
@@ -324,22 +350,22 @@ nav {
     white-space: nowrap; }
 
 @media screen and (max-width: 1379px) and (min-width: 1271px) {
-  /* line 39, public/sass/_nav.scss */
+  /* line 38, public/sass/_nav.scss */
   nav ul {
     width: 100%; }
-  /* line 42, public/sass/_nav.scss */
+  /* line 41, public/sass/_nav.scss */
   nav li {
     width: 100%; } }
 
 @media screen and (max-width: 1270px) {
-  /* line 49, public/sass/_nav.scss */
+  /* line 48, public/sass/_nav.scss */
   ul {
     justify-content: left !important;
     align-items: center !important;
     margin: auto;
     padding: 20px;
     width: 100% !important; }
-  /* line 57, public/sass/_nav.scss */
+  /* line 56, public/sass/_nav.scss */
   li {
     width: 100% !important;
     margin: 10px; } }
@@ -357,8 +383,9 @@ nav {
     z-index: 2;
     color: white;
     text-shadow: 1px 3px 10px black;
-    letter-spacing: 5px; }
-  /* line 14, public/sass/_logo.scss */
+    letter-spacing: 5px;
+    left: 20px; }
+  /* line 15, public/sass/_logo.scss */
   nav .logo::after {
     position: absolute;
     content: "Doesthislooknormal";
@@ -368,7 +395,7 @@ nav {
     left: -5px;
     top: 2px;
     z-index: -1; }
-  /* line 26, public/sass/_logo.scss */
+  /* line 27, public/sass/_logo.scss */
   nav .logo::before {
     font-weight: 900;
     position: absolute;
@@ -380,14 +407,14 @@ nav {
     left: 3px;
     letter-spacing: 4.7px; }
 
-@media screen and (max-width: 1270px) {
-  /* line 42, public/sass/_logo.scss */
+@media screen and (max-width: 1379px) {
+  /* line 43, public/sass/_logo.scss */
   .logo {
     display: none; }
-  /* line 45, public/sass/_logo.scss */
+  /* line 46, public/sass/_logo.scss */
   .logo::after {
     display: none; }
-  /* line 48, public/sass/_logo.scss */
+  /* line 49, public/sass/_logo.scss */
   .logo::before {
     display: none; } }
 

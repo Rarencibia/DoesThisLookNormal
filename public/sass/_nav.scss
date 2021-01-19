@@ -4,10 +4,9 @@ nav {
     align-items: center;
     background-color: #6FA6A8;
     z-index: -4;
-    overflow: none;
+    overflow: hidden;
     box-shadow: 3px 3px 10px black;
-    padding: 15px;
-    
+    margin: auto;    
 
     ul {
         width: 80%;

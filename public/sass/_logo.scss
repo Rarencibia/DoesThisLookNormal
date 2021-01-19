@@ -10,6 +10,7 @@ nav {
         color: white;
         text-shadow: 1px 3px 10px black;
         letter-spacing: 5px;
+        left: 20px;
     }
     .logo::after {
         position: absolute;
@@ -38,7 +39,7 @@ nav {
 }
 
 
-@media screen and (max-width: 1270px){
+@media screen and (max-width: 1379px){
     .logo {
         display: none;
     }
