@@ -280,27 +280,26 @@ footer {
       text-decoration: underline; }
   /* line 54, public/sass/_miniShopHP.scss */
   .miniShopSection .ecsp, .miniShopSection .ecsp-SingleProduct-v2, .miniShopSection .ecsp-Product, .miniShopSection .ec-Product-283334102 {
-    display: block !important;
-    vertical-align: bottom !important; }
-    /* line 58, public/sass/_miniShopHP.scss */
+    display: block !important; }
+    /* line 57, public/sass/_miniShopHP.scss */
     .miniShopSection .ecsp:hover, .miniShopSection .ecsp-SingleProduct-v2:hover, .miniShopSection .ecsp-Product:hover, .miniShopSection .ec-Product-283334102:hover {
       opacity: .80;
       transform: scale(1.1); }
 
-/* line 68, public/sass/_miniShopHP.scss */
+/* line 67, public/sass/_miniShopHP.scss */
 .introContainer {
   width: 40%;
   margin: auto; }
-  /* line 72, public/sass/_miniShopHP.scss */
+  /* line 71, public/sass/_miniShopHP.scss */
   .introContainer .intro {
     text-align: center; }
-  /* line 76, public/sass/_miniShopHP.scss */
+  /* line 75, public/sass/_miniShopHP.scss */
   .introContainer h1 {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
     letter-spacing: 5px;
     word-spacing: 10px; }
-  /* line 82, public/sass/_miniShopHP.scss */
+  /* line 81, public/sass/_miniShopHP.scss */
   .introContainer .introP {
     font-family: "Fredericka the Great", cursive;
     font-weight: bold;
@@ -309,10 +308,10 @@ footer {
     letter-spacing: -2px; }
 
 @media screen and (max-width: 1000px) {
-  /* line 94, public/sass/_miniShopHP.scss */
+  /* line 93, public/sass/_miniShopHP.scss */
   .introContainer {
     width: 100%; }
-    /* line 99, public/sass/_miniShopHP.scss */
+    /* line 98, public/sass/_miniShopHP.scss */
     .introContainer .introMedia {
       padding: 20px;
       text-align: left;
