@@ -10,11 +10,10 @@ const transporter = nodemailer.createTransport(mailGun(auth));
 
 const sendMail = (email, userName, item, msg, cb) => {
     const mailOptions = {
-        from: email,
         to: 'Rarencibia@comcast.net',
-        userName,
-        item,
-        msg,
+        from: 'Rarencibia@comcast.net',
+        subject: "order request: " + item,
+        text: "email: " +email + "\n" + "item: " + item + "\n" + "message: " + msg
     };
 
     transporter.sendMail(mailOptions, function (err,data) {
@@ -32,10 +31,10 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    var email = "Rarencibia@comcast.net";
-    var userName = "userName";
-    var item = "item";
-    var msg = "msg";
+    // var email = "Rarencibia@comcast.net";
+    // var userName = "userName";
+    // var item = "item";
+    // var msg = "msg";
 
     const {email, userName, item, msg} = req.body;
     console.log('req.body: ', req.body);
@@ -43,10 +42,11 @@ router.post('/', (req, res) => {
 
 
     // res.send("hello");
-    res.status(500).json({ message: 'test_error'});
+    // res.status(500).json({ message: 'test_error'});
 
     sendMail(email, userName, item, msg, function (err, data) {
         if(err) {
+            console.log(err);
             res.status(500).json({ message: 'Internal Error'});
         }else {
             res.json({ message: 'Email Sent! You will hear back from us shortly!'});

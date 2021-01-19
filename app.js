@@ -8,6 +8,8 @@ var sassMiddleware = require('node-sass-middleware');
 
 var app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
@@ -30,8 +32,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+
 app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
