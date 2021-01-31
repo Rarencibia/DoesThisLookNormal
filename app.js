@@ -26,6 +26,9 @@ app.use('/shop', shopRouter);
 var mailRouter = require('./routes/mailHandler');
 app.use('/email', mailRouter);
 
+var emailSentRouter = require('./routes/emailSent');
+app.use('email', emailSentRouter);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

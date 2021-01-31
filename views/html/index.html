@@ -78,42 +78,15 @@
 
         <textarea class="createInput" name="msg" id="userMsg" placeholder="Tell Us Your Idea" cols="30" rows="10" required></textarea>
 
-        <input type="submit" name="submit" id="submit" value="Send" class="button">
+        <input type="submit" name="submit" id="submitFormButton" value="Send" class="button">
+
       </form>
     </section>
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../public/javascripts/mailer.js"></script>
 
-<script>
-  $('#formData').on('submit', (e) => {
-    e.preventDefault();
-
-    const userName = $('#userName').val().trim();
-    const email = $('#userEmail').val().trim();
-    const item = $('#userItem').val().trim();
-    const msg = $('#userMsg').val().trim();
-
-    const data = {
-      email,
-      userName,
-      item,
-      msg
-    };
-
-    $.post('/email', data, function(data, status){
-
-      console.log("email:");
-      console.log("data: " + data);
-      console.log("status: " + status);
-      console.log("Email Sent!");
-    }).fail(function(response) {
-        console.log('(custom)Error: ' + response.responseText);
-        // alert('(custom)Error: ' + response.responseText);
-    });
-
-  })
-</script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
