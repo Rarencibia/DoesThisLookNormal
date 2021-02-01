@@ -212,19 +212,33 @@ footer {
       background-color: black;
       color: white;
       transform: skew(-6deg); }
+  /* line 63, public/sass/_createForm.scss */
+  .createWrapper .button {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 50px; }
+    /* line 70, public/sass/_createForm.scss */
+    .createWrapper .button:hover {
+      cursor: pointer;
+      animation: ease-in-out;
+      transition-duration: 1s;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 10px black; }
 
 @media screen and (max-width: 981px) {
-  /* line 67, public/sass/_createForm.scss */
+  /* line 84, public/sass/_createForm.scss */
   .createWrapper {
     overflow: hidden !important; }
-    /* line 70, public/sass/_createForm.scss */
+    /* line 87, public/sass/_createForm.scss */
     .createWrapper .creationInfo {
       width: 100% !important;
       word-wrap: break-word; }
-    /* line 74, public/sass/_createForm.scss */
+    /* line 91, public/sass/_createForm.scss */
     .createWrapper p {
       padding: 15px; }
-    /* line 77, public/sass/_createForm.scss */
+    /* line 94, public/sass/_createForm.scss */
     .createWrapper .createInput {
       width: 80%; } }
 

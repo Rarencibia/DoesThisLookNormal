@@ -47,9 +47,12 @@ router.post('/', (req, res) => {
     sendMail(email, userName, item, msg, function (err, data) {
         if(err) {
             console.log(err);
+            console.log("Interal Error");
             res.status(500).json({ message: 'Internal Error'});
+            
         }else {
-            res.json({ message: 'Email Sent! You will hear back from us shortly!'});
+            console.log("Email Sent");
+            res.status(200)({ message: 'Email Sent! You will hear back from us shortly!'});
         }
     });
 });
