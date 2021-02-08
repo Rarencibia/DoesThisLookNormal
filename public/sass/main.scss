@@ -14,6 +14,7 @@ $logo-font: 'Fredericka the Great', cursive;
 
 
 html body {
+
     font-family: $paragraph-font;
     margin: 0;
     padding: 0;
@@ -33,8 +34,9 @@ html body {
 }
 
 
-main {
 
+
+main {
     height: auto!important;
     width: 100%;
     .mainSection {
