@@ -128,34 +128,39 @@ footer {
   footer .socialMediaLogos {
     width: 50%;
     display: flex;
+    margin-left: 5px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
-  /* line 33, public/sass/_footer.scss */
+    flex-wrap: nowrap !important; }
+  /* line 34, public/sass/_footer.scss */
   footer .footerLogos {
+    margin-left: 10px;
     width: 50px;
     height: auto;
     border-radius: 20%; }
-    /* line 37, public/sass/_footer.scss */
+    /* line 40, public/sass/_footer.scss */
     footer .footerLogos:hover {
       transform: scale(1.3); }
-  /* line 42, public/sass/_footer.scss */
+  /* line 45, public/sass/_footer.scss */
+  footer #instagramImg {
+    height: 50px; }
+  /* line 49, public/sass/_footer.scss */
   footer a {
     color: white !important; }
-    /* line 44, public/sass/_footer.scss */
+    /* line 51, public/sass/_footer.scss */
     footer a:hover {
       color: blue !important;
       text-decoration: overline; }
-  /* line 52, public/sass/_footer.scss */
+  /* line 59, public/sass/_footer.scss */
   footer h5 {
     border-left: solid white 3px;
     border-top: solid white 3px;
     text-align: center;
     color: white !important; }
-  /* line 58, public/sass/_footer.scss */
+  /* line 65, public/sass/_footer.scss */
   footer h3 {
     color: white; }
-    /* line 60, public/sass/_footer.scss */
+    /* line 67, public/sass/_footer.scss */
     footer h3:hover {
       cursor: pointer;
       transform: scale(1.1); }
