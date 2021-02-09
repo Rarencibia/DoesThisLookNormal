@@ -254,7 +254,9 @@ footer {
   padding-bottom: 100px;
   color: black;
   letter-spacing: 3px;
-  background-color: #DBFEFF; }
+  background-image: url(../images/background.jpeg);
+  background-repeat: cover;
+  background-size: cover; }
   /* line 10, public/sass/_miniShopHP.scss */
   .miniShopSection .miniShopGrid {
     width: 100%;
@@ -304,21 +306,36 @@ footer {
     .miniShopSection .ecsp:hover, .miniShopSection .ecsp-SingleProduct-v2:hover, .miniShopSection .ecsp-Product:hover, .miniShopSection .ec-Product-283334102:hover {
       opacity: .80;
       transform: scale(1.1); }
+  /* line 63, public/sass/_miniShopHP.scss */
+  .miniShopSection .featuredItemMoney {
+    position: absolute;
+    color: black;
+    font-size: 2em;
+    font-weight: 900;
+    top: 80%;
+    left: 40%; }
+  /* line 72, public/sass/_miniShopHP.scss */
+  .miniShopSection .featuredMoneyP {
+    opacity: .80;
+    width: 70px;
+    border: 3px solid black;
+    background: white;
+    border-radius: 50%; }
 
-/* line 67, public/sass/_miniShopHP.scss */
+/* line 86, public/sass/_miniShopHP.scss */
 .introContainer {
   width: 40%;
   margin: auto; }
-  /* line 71, public/sass/_miniShopHP.scss */
+  /* line 90, public/sass/_miniShopHP.scss */
   .introContainer .intro {
     text-align: center; }
-  /* line 75, public/sass/_miniShopHP.scss */
+  /* line 94, public/sass/_miniShopHP.scss */
   .introContainer h1 {
     font-family: "Fredericka the Great", cursive;
     font-size: 45px;
     letter-spacing: 5px;
     word-spacing: 10px; }
-  /* line 81, public/sass/_miniShopHP.scss */
+  /* line 100, public/sass/_miniShopHP.scss */
   .introContainer .introP {
     font-family: "Fredericka the Great", cursive;
     font-weight: bold;
@@ -327,10 +344,10 @@ footer {
     letter-spacing: -2px; }
 
 @media screen and (max-width: 1000px) {
-  /* line 93, public/sass/_miniShopHP.scss */
+  /* line 112, public/sass/_miniShopHP.scss */
   .introContainer {
     width: 100%; }
-    /* line 98, public/sass/_miniShopHP.scss */
+    /* line 117, public/sass/_miniShopHP.scss */
     .introContainer .introMedia {
       padding: 20px;
       text-align: left;
