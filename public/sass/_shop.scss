@@ -1,76 +1,76 @@
-.gridWrapper {
-    font-family: $logo-font;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-    grid-column-gap: 100px;
-    margin-bottom: 1000px;
-    text-align: center;
+// .gridWrapper {
+//     font-family: $logo-font;
+//     width: 80%;
+//     height: auto;
+//     margin: auto;
+//     display: grid;
+//     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+//     grid-column-gap: 100px;
+//     margin-bottom: 1000px;
+//     text-align: center;
 
-    .shopForm {
-        position: absolute;
-        font-size: 35px;
-        border: none;
+//     .shopForm {
+//         position: absolute;
+//         font-size: 35px;
+//         border: none;
         
-    }
+//     }
 
-    .selectShopItems {
-        font-family: $logo-font;
-        font-weight: bold;
-        border: none;
-        width: 100px;
-        height: 30px;
-        box-shadow: 1px 1px 10px black;
-        &:hover{
-            background-color: #DBFEFF;
-        }
-    }
-
-
-    #gridContainer {
-        margin-top: 70px;
-        width: 100%;
-        height: auto;
-        background-color: white;
-        border-radius: 1.5%;
-        box-shadow: 3px 3px 10px black;
-
-        &:hover {
-            transition: transform 300ms ease-in-out;
-            transform: scale(1.03);
-        }
-
-    }
-
-    #itemPicture{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin: auto!important;
-    }
-
-    #itemName {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-
-    }
-
-    .shopButtons {
-        width: 120px;
-        height: 35px;
-        font-size: 15px;
-        font-weight: bold;
-        font-family: $logo-font;
-        &:hover {
-            cursor: pointer;
-            background-color: #DBFEFF;
-        }
-    }
+//     .selectShopItems {
+//         font-family: $logo-font;
+//         font-weight: bold;
+//         border: none;
+//         width: 100px;
+//         height: 30px;
+//         box-shadow: 1px 1px 10px black;
+//         &:hover{
+//             background-color: #DBFEFF;
+//         }
+//     }
 
 
+//     #gridContainer {
+//         margin-top: 70px;
+//         width: 100%;
+//         height: auto;
+//         background-color: white;
+//         border-radius: 1.5%;
+//         box-shadow: 3px 3px 10px black;
 
-}
+//         &:hover {
+//             transition: transform 300ms ease-in-out;
+//             transform: scale(1.03);
+//         }
+
+//     }
+
+//     #itemPicture{
+//         width: 100%;
+//         height: auto;
+//         object-fit: cover;
+//         margin: auto!important;
+//     }
+
+//     #itemName {
+//         width: 100%;
+//         margin: 0;
+//         text-align: center;
+
+//     }
+
+//     .shopButtons {
+//         width: 120px;
+//         height: 35px;
+//         font-size: 15px;
+//         font-weight: bold;
+//         font-family: $logo-font;
+//         &:hover {
+//             cursor: pointer;
+//             background-color: #DBFEFF;
+//         }
+//     }
+
+
+
+// }
 
