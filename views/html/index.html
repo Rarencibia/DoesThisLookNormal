@@ -129,7 +129,8 @@ $('#formData').on('submit', (e) => {
       // console.log("Email Sent!");
   }).fail(function(response) {
       console.log('(custom)Error: ' + response.responseText);
-      alert('(custom)Error: ' + response.responseText);
+      // alert('(custom)Error: ' + response.responseText);
+      alert("Response: " + response);
   });
 
 });

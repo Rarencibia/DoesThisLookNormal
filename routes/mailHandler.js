@@ -48,7 +48,7 @@ router.post('/', (req, res) => {
         if(err) {
             console.log(err);
             console.log("Interal Error");
-            res.status(500).json({ message: 'Internal Error'});
+            res.status(500).json({ message: 'Email did not sent, try again later.'});
             
         }else {
             console.log("Email Sent");
