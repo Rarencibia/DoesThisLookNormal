@@ -18,7 +18,11 @@ const sendMail = (email, userName, item, msg, cb) => {
 
     transporter.sendMail(mailOptions, function (err,data) {
         if(err) {
+            console.log(JSON.stringify(data));
+            console.log(err);
+            console.log(data);
             cb(err, null);
+
         } else{
             cb(null, data);
         }
@@ -47,11 +51,11 @@ router.post('/', (req, res) => {
     sendMail(email, userName, item, msg, function (err, data) {
         if(err) {
             console.log(err);
-            console.log("Interal Error");
-            res.status(500).json({ message: 'Email did not sent, try again later.'});
+            console.log("Interal Error, the mailer did not work.");
+            res.status(500).json({ message: 'Email did not send, try again later.'});
             
         }else {
-            console.log("Email Sent");
+            console.log("Email Sent, Thank you so much.");
             res.status(200)({ message: 'Email Sent! You will hear back from us shortly!'});
         }
     });
