@@ -115,12 +115,12 @@ $('#formData').on('submit', (e) => {
   };
 
   $.post('/email', data, function(data, status){
-      if(status == "success"){
-          alert("Your email has been sent! We will get back to you shortly!");
+      // if(status == "success"){
+      //     alert("Your email has been sent! We will get back to you shortly!");
           
-      }else {
-          alert("Something Went Wrong, please try again later!");
-      }
+      // }else {
+      //     alert("Something Went Wrong, please try again later!");
+      // }
 
 
       // console.log("email:");
@@ -130,7 +130,7 @@ $('#formData').on('submit', (e) => {
   }).fail(function(response) {
       console.log('(custom)Error: ' + response.responseText);
       // alert('(custom)Error: ' + response.responseText);
-      alert("Response: " + response);
+      alert("Response: " + response.message);
   });
 
 });
