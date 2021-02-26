@@ -1,3 +1,4 @@
+const { log } = require('debug');
 var express = require('express');
 var router = express.Router();
 
@@ -18,14 +19,10 @@ const sendMail = (email, userName, item, msg, cb) => {
 
     transporter.sendMail(mailOptions, function (err,data) {
         if(err) {
-            console.log(JSON.stringify(data));
-            console.log(err);
-            console.log(data);
-            cb(err, null);
+            return cb(err, null);
 
-        } else{
-            cb(null, data);
         }
+            return cb(null, data);
     });
 
 };
@@ -41,7 +38,7 @@ router.post('/', (req, res) => {
     // var msg = "msg";
 
     const {email, userName, item, msg} = req.body;
-    console.log('req.body: ', req.body);
+    console.log('Data: ', req.body);
 
 
 
@@ -50,17 +47,11 @@ router.post('/', (req, res) => {
 
     sendMail(email, userName, item, msg, function (err, data) {
         if(err) {
-            // console.log(err);
-            // console.log("Interal Error, the mailer did not work.");
-            // res.status(500).json({ message: 'Email did not send, try again later.'});
-            alert("Email did not send")
-            
+            console.log("Error: ", err); 
+            return res.status(500).json({ message: err.message || 'Internal Error'});           
         }
-        alert("Email Sent!! We will get back to you shortly!")
-        // else{
-        //     console.log("Email Sent, Thank you so much.");
-        //     res.status(200)({ message: 'Email Sent! You will hear back from us shortly!'});
-        // }
+        console.log("Email Sent!!")
+        return res.json({ message: 'Email sent!!!'});
     });
 });
 
