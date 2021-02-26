@@ -53,10 +53,10 @@ router.post('/', (req, res) => {
             // console.log(err);
             // console.log("Interal Error, the mailer did not work.");
             // res.status(500).json({ message: 'Email did not send, try again later.'});
-            return alert("Email did not send")
+            alert("Email did not send")
             
         }
-        return alert("Email Sent!! We will get back to you shortly!")
+        alert("Email Sent!! We will get back to you shortly!")
         // else{
         //     console.log("Email Sent, Thank you so much.");
         //     res.status(200)({ message: 'Email Sent! You will hear back from us shortly!'});
