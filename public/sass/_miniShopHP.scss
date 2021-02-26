@@ -4,7 +4,9 @@
     padding-bottom: 100px;
     color: black;
     letter-spacing: 3px;
-    background-color: #DBFEFF;
+    // background-color: #DBFEFF;
+    background: rgb(68,8,8);
+    background: linear-gradient(162deg, rgba(68,8,8,1) 0%, rgba(0,0,0,1) 0%, rgba(186,243,245,1) 37%, rgba(186,243,245,1) 74%);
     box-shadow: 3px 3px 10px black;
     .miniShopGrid{
 
@@ -91,6 +93,7 @@
     }
 
     h1 {
+        color: white;
         font-family: $logo-font;
         font-size: 45px;
         letter-spacing: 5px;
